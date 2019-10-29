@@ -1,0 +1,27 @@
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* 50%为自身尺寸的一半 */
+}
+
+.column {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-content: center;
+}

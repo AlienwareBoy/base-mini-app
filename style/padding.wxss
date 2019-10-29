@@ -1,0 +1,53 @@
+/* 20rpx */
+.app-pad-t20 {
+  padding-top: 20rpx;
+}
+.app-pad-l20 {
+  padding-left: 20rpx;
+}
+.app-pad-r20 {
+  padding-right: 20rpx;
+}
+.app-pad-b20 {
+  padding-bottom: 20rpx;
+}
+
+/* 40rpx */
+.app-pad-t40 {
+  padding-top: 40rpx;
+}
+.app-pad-l40 {
+  padding-left: 40rpx;
+}
+.app-pad-r40 {
+  padding-right: 40rpx;
+}
+.app-pad-b40 {
+  padding-bottom: 40rpx;
+}
+/* 60rpx */
+.app-pad-t60 {
+  padding-top: 60rpx;
+}
+.app-pad-l60 {
+  padding-left: 60rpx;
+}
+.app-pad-r60 {
+  padding-right: 60rpx;
+}
+.app-pad-b60 {
+  padding-bottom: 60rpx;
+}
+/* 88rpx */
+.app-pad-t88 {
+  padding-top: 88rpx;
+}
+.app-pad-l88 {
+  padding-left: 88rpx;
+}
+.app-pad-r88 {
+  padding-right: 88rpx;
+}
+.app-pad-b88 {
+  padding-bottom: 88rpx;
+}

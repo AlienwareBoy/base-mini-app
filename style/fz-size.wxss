@@ -1,0 +1,24 @@
+.app-fz-22{
+  font-size: 22rpx;
+}
+.app-fz-26{
+  font-size: 26rpx;
+}
+.app-fz-28{
+  font-size: 28rpx;
+}
+.app-fz-34{
+  font-size: 34rpx;
+}
+.app-fz-36{
+  font-size: 36rpx;
+}
+.app-fz-40{
+  font-size: 40rpx;
+}
+.app-fz-80{
+  font-size: 80rpx;
+}
+.app-weight{
+  font-weight: 700;
+}
