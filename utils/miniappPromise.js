@@ -1,5 +1,3 @@
-var export_default = module.exports;
-
 function Toast(title, icon = 'none', duration = 1000) {
   return new Promise(function(resolve, reject) {
     wx.showToast({
@@ -74,7 +72,7 @@ function uploadFile(api, res) {
   })
 }
 
-function wxLogin(api, res) {
+function wxLogin() {
   return new Promise((resolve, reject) => {
     wx.login({
       success: res => {

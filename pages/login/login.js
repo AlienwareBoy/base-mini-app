@@ -1,10 +1,12 @@
-Page({
+const app = getApp();
+app.miniPage({
   data: {
-
+    text:'这是我通过分享进入的页面'
   },
-  toPath() {
-    wx.navigateTo({
-      url: '../component-page/component-page',
-    })
+  onLoad(){
+    console.log('我本应进入的页面')
+  },
+  onShow(){
+    console.log('loginOnshow')
   }
 })
