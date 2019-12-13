@@ -1,6 +1,6 @@
 <view class='login'>
   <view class="center">
-    <text class="app-fz-40 app-col-333 app-weight">ç»„ä»¶åº“æ•ˆæžœä¸€è§ˆ</text>
-    <button class="to-path app-bg-blue flex-center app-fz-40 app-color-333 app-mar-t40" catchtap="toPath">ç‚¹å‡»è¿›å…¥</button>
+    <text class="app-fz-40 app-col-333 app-weight">×é¼þ¿âÐ§¹ûÒ»ÀÀ</text>
+    <button class="to-path app-bg-blue flex-center app-fz-40 app-color-333 app-mar-t40" catchtap="toPath">µã»÷½øÈë</button>
   </view>
 </view>
