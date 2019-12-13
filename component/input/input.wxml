@@ -1,0 +1,4 @@
+<view class="search row">
+  <text class="iconfont iconsousuo"></text>
+  <input placeholder="{{placeholder}}" bind:blur="getReault"></input>
+</view>

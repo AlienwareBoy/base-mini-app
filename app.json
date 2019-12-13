@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/component-page/component-page"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "友友陪玩",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

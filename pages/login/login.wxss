@@ -1,0 +1,8 @@
+.center{
+  width: 100%;
+  text-align: center;
+}
+.to-path{
+  width: 500rpx;
+  height: 70rpx
+}

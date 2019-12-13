@@ -1,0 +1,12 @@
+.app-bg-ora {
+  background: linear-gradient(180deg, #ffc781 0%, #ff8568 100%);
+}
+.app-bg-blue {
+  background: linear-gradient(180deg, #87ceff 0%, #9597ff 100%);
+}
+.app-bg-red {
+  background: #FD1F1F;
+}
+.app-bg-pink {
+  background: linear-gradient(180deg, #FFAFAA 0%, #FF668D 100%);
+}
