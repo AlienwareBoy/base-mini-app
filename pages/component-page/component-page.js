@@ -1,66 +1,47 @@
-// pages/component-page/component-page.js
+import {
+  Toast
+} from '../../utils/miniappPromise.js'
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onLoad(e) {
+    console.log(e, '-eee')
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  processQuery(query) {
+    let queryStr = '';
+    let count = 0;
+    for (let i in query) {
+      if (query[i] instanceof Object) {
+        let arrStr = JSON.stringify(query[i])
+        if (count > 0) {
+          queryStr += `&${i}=${arrStr}`
+        } else {
+          queryStr += `?${i}=${arrStr}`
+        }
+      } else {
+        if (count > 0) {
+          queryStr += `&${i}=${query[i]}`
+        } else {
+          queryStr += `?${i}=${query[i]}`
+        }
+      }
+      count++;
+    }
+    console.log(queryStr)
+    return queryStr
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  getUserInfo(e) {
+    let userInfo = e.detail.userInfo;
+    let entryPage = wx.getStorageSync('entryPage');
+    let query = this.processQuery(entryPage.query)
+    console.log(entryPage)
+    userInfo.id = 1;
+    wx.setStorageSync('userInfo', userInfo)
+    Toast('鐧诲綍鎴愬姛').then(res => {
+      wx.reLaunch({
+        url: `..${entryPage.path}${query}`,
+      })
+    })
   }
 })

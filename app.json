@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/login/login",
+    "pages/sharePage/sharePage",
     "pages/component-page/component-page"
   ],
   "window": {
@@ -8,6 +8,11 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "友友陪玩",
     "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置将用于获取最近的自提点信息"
+    }
   },
   "sitemapLocation": "sitemap.json"
 }

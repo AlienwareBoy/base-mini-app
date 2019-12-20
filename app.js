@@ -7,5 +7,8 @@ App({
   data: {
     Storage,
     userInfo: null
+  },
+  onLaunch(e){
+   
   }
 })

@@ -1,5 +1,3 @@
-var export_default = module.exports;
-
 function Toast(title, icon = 'none', duration = 1000) {
   return new Promise(function(resolve, reject) {
     wx.showToast({
