@@ -1,3 +1,10 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "组件库一览表",
+  "usingComponents": {
+    "component-item": "../../component/component-item/component-item",
+    "picker-bottom": "../../component/picker-bottom/picker-bottom",
+    "save-usercode": "../../component/saveUserCode/saveUserCode",
+    "step": "../../component/step/step",
+    "img-upload": "../../component/ImgUpload/ImgUpload"
+  }
 }

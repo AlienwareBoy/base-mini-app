@@ -1,0 +1,76 @@
+.line {
+  position: relative;
+  width: 40rpx;
+  text-align: center;
+}
+
+.line image {
+  width: 16rpx;
+  height: 16rpx;
+}
+
+.startIcon {
+  position: relative;
+  left: 14rpx;
+  top: 12rpx;
+}
+
+.endIcon {
+  position: absolute;
+  bottom: -2rpx;
+  left: 13rpx;
+}
+
+.nowIcon {
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  left: 14rpx;
+  top: 12rpx;
+}
+
+.line text {
+  height: 170rpx;
+  width: 4rpx;
+  display: inline-block;
+  background: #dcdee0;
+  border-radius: 20rpx;
+  margin: 0 auto;
+}
+
+.Info {
+  width: 546rpx;
+  height: 144rpx;
+  position: relative;
+  justify-content: center;
+  align-items: left;
+}
+
+.InfoTitle {
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+}
+
+.InfoTime {
+  margin-top: 12rpx;
+  color: #ccc;
+}
+
+.stepItem:not(:first-of-type) {
+  margin-top: -17rpx;
+}
+
+.stopList {
+  max-height: 1000rpx;
+}
+
+.desc {
+  max-height: 300rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width: 546rpx;
+}

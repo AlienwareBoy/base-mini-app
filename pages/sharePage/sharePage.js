@@ -3,15 +3,13 @@ Page({
 
   },
   onLoad(e){
+    console.log(JSON.parse(e.list))
+    console.log(e)
     let list=1;
     let slsdf =JSON.parse(e.list);
-    console.log(slsdf)
     console.log(list)
   },
-  toPath() {
-    wx.navigateTo({
-      url: '../component-page/component-page',
-    })
+  onShow(){
   },
   onHide(){
     

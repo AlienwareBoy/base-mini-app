@@ -1,4 +1,6 @@
-<view class="search row">
-  <text class="iconfont iconsousuo"></text>
-  <input placeholder="{{placeholder}}" bind:blur="getReault"></input>
+<view class="mar-32 bg-fff pad-b50 pad-t50 pad-l32 pad-r32">
+  <view class="search row">
+    <text class="iconfont iconsousuo"></text>
+    <input placeholder="{{placeholder}}" bind:blur="getReault"></input>
+  </view>
 </view>

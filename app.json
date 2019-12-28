@@ -1,7 +1,9 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/sharePage/sharePage",
-    "pages/component-page/component-page"
+    "pages/component-page/component-page",
+    "pages/wxLogin/wxLogin"
   ],
   "window": {
     "backgroundTextStyle": "light",

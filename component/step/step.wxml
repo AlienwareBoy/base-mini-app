@@ -1,0 +1,18 @@
+<scroll-view scroll-y="true" class="stopList mar-t50" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <block wx:for="{{stepList}}">
+    <view class="stepItem flex-start">
+      <view class="line column">
+        <image class="nowIcon" src=" {{index==0?'./image/ic_logistics_b@2x.png':''}}"></image>
+        <text></text>
+        <image class="endIcon" src="./image/ic_logistics_g@2x.png"></image>
+      </view>
+      <view class="Info column">
+        <text class="InfoTitle fz-26 color-333">{{item.title}}</text>
+        <view class="mar-t50">
+          <text class="desc fz-26  color-666">{{item.description}}</text>
+          <text class="InfoTime fz-20 color-ccc block">{{item.createTime}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</scroll-view>

@@ -5,13 +5,24 @@
   flex-wrap: wrap;
 }
 
+.flex-end{
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
+}
 .flex-center {
   display: flex;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
 }
-
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
 .center {
   position: absolute;
   left: 50%;
@@ -24,4 +35,34 @@
   justify-content: flex-start;
   flex-direction: column;
   align-content: center;
+}
+.column-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+.block{
+  display: block;
+}
+.rel{
+  position: relative;
+}
+.inline{
+  display: inline-block;
+}
+.app-weight{
+	font-weight: 700;
+}
+.Mask{
+  position: fixed;
+  left: 0rpx;
+  top: 0rpx;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.popup{
+  border-radius: 20rpx;
 }

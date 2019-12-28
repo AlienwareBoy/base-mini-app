@@ -1,3 +1,15 @@
-<view class='container'>
-  <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权页面</button>
+<view class="component-item">
+  <component-item title="图片上传">
+    <img-upload></img-upload>
+  </component-item>
+  <component-item title="底部弹出">
+    <button class="buttonStyle fz-24 bg-blue color-fff" catchtap="open_popup">开启</button>
+    <button class="buttonStyle fz-24 bg-blue color-fff mar-t20" catchtap="close_popup">关闭</button>
+    <picker-bottom id="popup-bottom">
+      <view>我是自定义的popup</view>
+    </picker-bottom>
+  </component-item>
+  <component-item title="步进器">
+    <step></step>
+  </component-item>
 </view>

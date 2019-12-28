@@ -1,12 +1,15 @@
-.app-bg-ora {
-  background: linear-gradient(180deg, #ffc781 0%, #ff8568 100%);
+.bg-fff {
+  background: #fff;
 }
-.app-bg-blue {
-  background: linear-gradient(180deg, #87ceff 0%, #9597ff 100%);
+.bg-ffc {
+  background: #FFCF4A;
 }
-.app-bg-red {
-  background: #FD1F1F;
+.bg-red {
+  background: #FF4444;
 }
-.app-bg-pink {
-  background: linear-gradient(180deg, #FFAFAA 0%, #FF668D 100%);
+.bg-green{
+  background: #44BB00;
+}
+.bg-blue{
+  background: #275498;
 }

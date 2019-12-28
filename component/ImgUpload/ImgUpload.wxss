@@ -1,8 +1,3 @@
-.Upload image {
-  width: 150rpx;
-  height: 150rpx;
-}
-
 page {
   background: #f5f5f5;
   padding-top: 30rpx;
@@ -12,63 +7,121 @@ page {
   background: #fff;
 }
 
+.relStyle {
+  position: relative;
+}
+
 .addImg {
-  width: 149rpx;
-  height: 149rpx;
+  width: 190rpx;
+  height: 190rpx;
   border: 1rpx rgba(153, 153, 153, 0.7) dashed;
   position: relative;
 }
 
-.addImg text:nth-child(1) {
-  position: absolute;
-  left: 0rpx;
-  top: 0rpx;
-  bottom: 0rpx;
-  right: 0rpx;
-  margin: auto;
-  width: 50rpx;
-  height: 4rpx;
-  background: #999;
+.addImg image {
+  width: 60rpx;
+  height: 60rpx;
 }
 
-.addImg text:nth-child(2) {
-  position: absolute;
-  left: 0rpx;
-  top: 0rpx;
-  bottom: 0rpx;
-  right: 0rpx;
-  margin: auto;
-  width: 4rpx;
-  height: 50rpx;
-  background: #999;
+.text {
+  font-size: 24rpx;
+  color: #275498;
+}
+
+.border-center {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.border-center image {
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 .img-item {
-  margin-right: 20rpx;
+  margin-right: 13rpx;
   border: 1rpx solid #999;
-  width: 150rpx;
-  height: 150rpx;
+  width: 190rpx;
+  height: 190rpx;
   margin-bottom: 20rpx;
+  position: relative;
 }
 
-.img-item image {
+.image {
   width: 100%;
   height: 100%;
 }
-.row{
+
+.img-item video {
+  width: 190rpx;
+  height: 190rpx;
+}
+
+.delete {
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  right: -11rpx;
+  top: -13rpx;
+}
+
+.row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.row_start{
+
+.row_start {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
 .between {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* 50%为自身尺寸的一半 */
+}
+
+.popup-bottom {
+  background: #fff;
+  z-index: 501;
+  position: absolute;
+  left: 0rpx;
+  bottom: 0rpx;
+  width: 100%;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.commonStyle {
+  text-align: center;
+  font-size: 40rpx;
+  padding: 10rpx 0rpx;
+}
+
+.line-video {
+  border-bottom: 1rpx solid #e5e5e5;
+  display: block;
+  width: 100%;
 }

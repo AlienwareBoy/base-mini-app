@@ -38,7 +38,43 @@ function debounce(func, wait) {
     }, wait);
   }
 }
+// 解析query
+function getUrlByObject(o, prefix = "", urls = []) {
+  if (o instanceof Array) {
+    o.forEach((e, i) => {
+      if (e instanceof Array || e instanceof Object) {
+        urls = urls.concat(getUrlByObject(e, prefix));
+      } else {
+        urls.push(prefix + "=" + e);
+      }
+    });
+  } else if (o instanceof Object) {
+    for (const p in o) {
+      const value = o[p];
+      if (value instanceof Array || value instanceof Object) {
+        urls = urls.concat(
+          getUrlByObject(value, prefix ? prefix + "." + p : p)
+        );
+      } else {
+        urls.push((prefix ? prefix + "." + p : p) + "=" + value);
+      }
+    }
+  }
+  return urls;
+}
+function fixOpts(options) {
+  if (options.query) {
+    options.url = options.url.split("?")[0];
+    // 安卓上的不会对中文进行 encode 导致请求错误
+    options.url += `?${getUrlByObject(options.query)
+      .map(encodeURI)
+      .join("&")}`;
+    delete options.query;
+  }
+  return options;
+}
 export {
+  fixOpts,
   throttle,
   debounce
 }

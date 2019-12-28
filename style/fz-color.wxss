@@ -1,6 +1,19 @@
-.app-color-333{
+.color-333{
   color: #333;
 }
-.app-color-999{
-  color: #9f9f9f;
+.color-666{
+  color: #666;
+}
+.color-fff{
+  color: #fff;
+}
+
+.color-999{
+  color: #999;
+}
+.color-blue{
+  color:#275498;
+}
+.color-red{
+  color:#FF4444;
 }

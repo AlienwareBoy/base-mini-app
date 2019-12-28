@@ -11,12 +11,12 @@ Component({
    * 组件的初始数据
    */
   data: {
-    showCode:false,
+    showCode:true,
     itemList: [
-      '../../assets/images/step1@2x.png',
-      '../../assets/images/step2@2x.png',
-      '../../assets/images/step3@2x.png',
-      '../../assets/images/step4.png'
+      './image/platform introduction@2x.png',
+      './image/platform introduction@2x.png',
+      './image/platform introduction@2x.png',
+      './image/platform introduction@2x.png'
     ]
   },
 

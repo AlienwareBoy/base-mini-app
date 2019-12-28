@@ -1,6 +1,5 @@
 <view class='login'>
   <view class="center">
-    <text class="app-fz-40 app-col-333 app-weight">组件库一览</text>
-    <button class="to-path app-bg-blue flex-center app-fz-40 app-color-333 app-mar-t40" catchtap="toPath">进入组件库</button>
+    <text class="app-fz-40 app-col-333 app-weight">我是组件页面,可以分享</text>
   </view>
 </view>

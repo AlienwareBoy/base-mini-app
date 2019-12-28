@@ -58,8 +58,8 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "授权页",
-					"pathName": "pages/component-page/component-page",
+					"name": "首页",
+					"pathName": "pages/index/index",
 					"query": "id=5",
 					"scene": null
 				},
@@ -68,6 +68,12 @@
 					"name": "分享页",
 					"pathName": "pages/sharePage/sharePage",
 					"query": "id=5&name='张三'&list=[{a:1}]&obj={a:1}&list2=[\"1\"]",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "组件库",
+					"pathName": "pages/component-page/component-page",
 					"scene": null
 				}
 			]
