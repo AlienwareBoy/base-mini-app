@@ -7,6 +7,9 @@ const app = getApp()
 const SUCCESS_CODE = 200;
 const FAILE_CODE = 500;
 const check_login_page = ["pages/sharePage/sharePage","pages/index/index"]; //需要检测登录的页面,并记录传入的query或者param
+
+
+
 function init(count, route, that) {
   return new Promise((resolve, reject) => {
     const userInfo = wx.getStorageSync('userInfo')
@@ -14,7 +17,6 @@ function init(count, route, that) {
     if (check_login_page.includes(route)) {
       console.info('当前页面需要检测授权')
       // 记录检测登录页面的路由参数，如有带入参数可在stroage查看
-      console.log(fixOpts(that.options))
       wx.setStorageSync('entryPage', {
         query: that.options,
         path: that.route.replace('pages', '')
