@@ -4,21 +4,24 @@ import {
 import {
   init,
 } from './init.js'
+import {
+  $global
+} from './global.js'
 const LIFETIME_EVENTS = ['onLoad']
 const ONHIDEN_EVENTS = ['onHide']
-var originPage = Page
+const originPage = Page
 
-function getAddress() {
-  wx.getLocation({
-    type: 'wgs84',
-    success(res) {
-      wx.setStorageSync('position', {
-        lat: res.latitude,
-        lon: res.longitude
-      })
-    }
-  })
-}
+// function getAddress() {
+//   wx.getLocation({
+//     type: 'wgs84',
+//     success(res) {
+//       wx.setStorageSync('position', {
+//         lat: res.latitude,
+//         lon: res.longitude
+//       })
+//     }
+//   })
+// }
 
 function MyPage(config) {
   let _this = this;
@@ -31,9 +34,8 @@ function MyPage(config) {
   })
   config.onLoad = function(options) {
       let that = this;
-      getAddress();
       init(0, that.route, that).then(res => {
-        console.log(that, '当前页面路由栈')
+        // console.log(that, '当前页面路由栈')
         LIFETIME_EVENTS.forEach((event) => {
           _this.lifetimeBackup[event].call(that, that.options)
           // 执行完后，恢复过来
@@ -47,11 +49,9 @@ function MyPage(config) {
       if (!userInfo.name) {
         console.log('我进来了')
         wx.setStorageSync('count', 0)
-        // wx.reLaunch({
-        //   url: '../index/index',
-        // })
       }
     }
+  config.$global = $global()
   originPage(config)
 }
 const miniPage = function(config) {

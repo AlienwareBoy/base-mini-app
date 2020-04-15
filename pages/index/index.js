@@ -3,7 +3,7 @@ Page({
 
   },
   onLoad(e){
-    console.log(e)
+    console.log(this.$global)
   },
   toPath() {
     wx.navigateTo({

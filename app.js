@@ -2,7 +2,6 @@ import {
   Storage
 } from './utils/getStorageInfo.js'
 import { miniPage } from './utils/page.js'
-console.log(1)
 Page = miniPage
 App({
   data: {
@@ -11,5 +10,8 @@ App({
   },
   onLaunch(e){
    
+  },
+  globalData:{
+    isLogin:false
   }
 })
