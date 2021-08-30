@@ -1,82 +1,23 @@
 {
-	"description": "项目配置文件",
-	"packOptions": {
-		"ignore": []
-	},
+	"miniprogramRoot": "dist/",
+	"projectname": "uni_market_taro",
+	"description": "",
+	"appid": "touristappid",
 	"setting": {
-		"urlCheck": false,
-		"es6": true,
-		"postcss": true,
-		"minified": true,
+		"urlCheck": true,
+		"es6": false,
+		"postcss": false,
+		"preloadBackgroundData": false,
+		"minified": false,
 		"newFeature": true,
+		"autoAudits": false,
 		"coverView": true,
-		"nodeModules": true,
-		"autoAudits": true,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		},
-		"enhance": true
+		"showShadowRootInWxmlPanel": false,
+		"scopeDataCheck": false,
+		"useCompilerModule": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.8.2",
-	"appid": "wxd446f43a6a08e559",
-	"projectname": "%E8%87%AA%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%A8%A1%E6%9D%BF",
-	"debugOptions": {
-		"hidedInDevtools": []
-	},
-	"isGameTourist": false,
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"currentL": -1,
-			"list": []
-		},
-		"gamePlugin": {
-			"current": -1,
-			"list": []
-		},
-		"miniprogram": {
-			"current": 0,
-			"list": [
-				{
-					"id": 0,
-					"name": "首页",
-					"pathName": "pages/index/index",
-					"query": "id=5",
-					"scene": null
-				},
-				{
-					"id": 1,
-					"name": "分享页",
-					"pathName": "pages/sharePage/sharePage",
-					"query": "id=5&name='张三'&list=[{a:1}]&obj={a:1}&list2=[\"1\"]",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "组件库",
-					"pathName": "pages/component-page/component-page",
-					"scene": null
-				}
-			]
-		}
-	}
+	"condition": {}
 }

@@ -1,3 +1,0 @@
-<view class='Mask' bindtap="closeMask" wx:if="{{showMask}}">
-  <slot name='centerContent'></slot>
-</view>

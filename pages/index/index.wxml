@@ -1,5 +1,0 @@
-<view class='login'>
-  <view class="center">
-    <button class="to-path app-bg-blue flex-center app-fz-40 app-color-333 app-mar-t40" catchtap="toPath">进入组件库</button>
-  </view>
-</view>
